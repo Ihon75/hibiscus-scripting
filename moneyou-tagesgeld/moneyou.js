@@ -559,7 +559,7 @@ rowaweb.entryPoint = function(hiAccount, monitor) {
 
     Website.prototype._setupClient = function() {
       this.client = new WebClient();
-      return this.client.setCssEnabled(false);
+      return this.client.setOptions().setCssEnabled(false);
     };
 
     Website.prototype.hasText = function(text) {
